@@ -19,6 +19,13 @@
     gap:5px;
     justify-content: center;
     align-items: center;
+    a{
+        text-decoration: none;
+        color:white;
+        transition:0.3s ease-in-out;
+    
+   
+    
     .button{
         width:fit-content;
         border:1px solid white;
@@ -26,17 +33,20 @@
         padding-right:30px;
         padding-top:10px;
         padding-bottom: 10px;
-
+        transition: 0.5s ease-in-out;
+    
+     
+       
+    }
+    .button:hover{
         cursor:pointer;
         border-radius:50px;
-        a{
-            text-decoration: none;
-            color:white;
-            transition:0.3s ease-in-out;
-        }
-        a:hover{
-            color:grey;
-        }
+      
     }
+}
+a:hover{
+    color:grey;
+}
+
 }
 }
