@@ -1,8 +1,26 @@
+"use client"
 import styles from "./style.module.scss"
 import Image from 'next/image'
-import profile from './one.png'
-
+import one from './one.png'
+import two from './two.png'
+import three from './three.png'
+import four from './four.png'
+import { useEffect, useState } from "react"
 export default function Landing() {
+    const [imgprofile,setip]=useState(one)
+    const imgarray=[one,two,three]
+    const [i,seti]=useState(0);
+    useEffect(()=>{
+        setTimeout(()=>{
+            if(i===imgarray.length-1){
+                seti(0);
+            }
+            else{
+                seti(i+1);
+            }
+                setip(imgarray[i]);
+        },1500)
+    },[i])
     return (<>
         <div className={styles.mainpage}>
             <div className={styles.hed}>
@@ -14,9 +32,9 @@ export default function Landing() {
                 </a>
             </div>
             <div className={styles.img}>
-                <Image src={profile}
-                    alt="VINAY"
-                    width={600} height={500}>
+                <Image src={imgprofile}
+                    alt="lol"
+                    width={400} height={500} style={{borderRadius: "50px"}}>
                 </Image>
             </div>
         </div>
