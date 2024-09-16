@@ -14,10 +14,10 @@ export default function Landing() {
                 </a>
             </div>
             <div className={styles.img}>
-                {/* <Image src={profile}
+                <Image src={profile}
                     alt="VINAY"
                     width={600} height={500}>
-                </Image> */}
+                </Image>
             </div>
         </div>
     </>)

@@ -1,52 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-.mainpage{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
+
+.mainpage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     width: 100wh;
-    height:100vh;
+    height: 100vh;
     background-color: hsl(0, 0%, 0%);
-    text-align:center;
-    color:rgb(231, 242, 252);
+    text-align: center;
+    color: rgb(231, 242, 252);
     justify-content: center;
     align-items: center;
     font-family: "IBM Plex Sans Condensed", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size:30px;
-  .hed{
-    display:flex;
-    flex-direction: column;
-    gap:5px;
-    justify-content: center;
-    align-items: center;
-    a{
-        text-decoration: none;
-        color:white;
-        transition:0.3s ease-in-out;
-    
-   
-    
-    .button{
-        width:fit-content;
-        border:1px solid white;
-        padding-left:30px;
-        padding-right:30px;
-        padding-top:10px;
-        padding-bottom: 10px;
-        transition: 0.5s ease-in-out;
-    
-     
-       
-    }
-    .button:hover{
-        cursor:pointer;
-        border-radius:50px;
-      
-    }
-}
-a:hover{
-    color:grey;
-}
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    &::before {
+        position: fixed;
+        content:'';
+        pointer-events: none;
+        
+        left:calc(50% - 200px);
+        filter:blur(250px);
+        z-index:0;
 
-}
+        border-radius: 50% 50% 0 0 ;
+        width:400px;
+        height:400px;
+        background-image: linear-gradient(to right, grey,white);
+    }
+    .hed {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        a {
+            text-decoration: none;
+            color: white;
+            transition: 0.3s ease-in-out;
+            .button {
+                width: fit-content;
+                border: 1px solid white;
+                padding-left: 30px;
+                padding-right: 30px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                transition: 0.5s ease-in-out;
+            }
+
+        }
+        a:hover {
+            .button{
+            background-color: white;
+            color: black;
+            }
+            cursor: pointer;
+            border-radius: 50px;
+        }
+
+    }
 }
