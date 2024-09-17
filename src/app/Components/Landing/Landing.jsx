@@ -27,11 +27,13 @@ export default function Landing() {
         <div className={styles.mainpage}>
             <div className={styles.hed}>
                 <h1>TRANSFORM YOUR BODY <br /> TRANSFORM YOUR LIFE</h1>
-                <a href="contact">
-                    <div className={styles.button}>
+                <a href="#Contact">
+                    <div className={styles.button} onClick={(x)=>setClick(!x)} >
                         CONTACT
                     </div>
+                    
                 </a>
+                
             </div>
             <div className={styles.imgcontainer}>
                 <Image
