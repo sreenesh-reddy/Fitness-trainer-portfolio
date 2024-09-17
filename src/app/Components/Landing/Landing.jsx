@@ -6,9 +6,12 @@ import two from './two.png'
 import three from './three.png'
 import four from './four.png'
 import { useEffect, useState } from "react"
+import Contact from "../Contact/Contact"
+
+
 export default function Landing() {
     const [imgprofile,setip]=useState(one)
-    const imgarray=[one,two,three]
+    const imgarray=[one,two,three,four]
     const [i,seti]=useState(0);
     useEffect(()=>{
         setTimeout(()=>{
@@ -19,17 +22,23 @@ export default function Landing() {
                 seti(i+1);
             }
                 setip(imgarray[i]);
-        },1500)
+        },2000)
     },[i])
+    
+    const [click,setClick]=useState(false)
+
+    
     return (<>
         <div className={styles.mainpage}>
             <div className={styles.hed}>
                 <h1>TRANSFORM YOUR BODY <br /> TRANSFORM YOUR LIFE</h1>
-                <a href="contact">
-                    <div className={styles.button}>
+                <a href="#Contact">
+                    <div className={styles.button} onClick={(x)=>setClick(!x)} >
                         CONTACT
                     </div>
+                    
                 </a>
+                
             </div>
             <div className={styles.img}>
                 <Image src={imgprofile}
