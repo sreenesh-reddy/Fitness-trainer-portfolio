@@ -6,7 +6,7 @@ import two from './two.png'
 import three from './three.png'
 import four from './four.png'
 import { useEffect, useState } from "react"
-import Contact from "../Contact/Contact"
+
 
 
 export default function Landing() {
