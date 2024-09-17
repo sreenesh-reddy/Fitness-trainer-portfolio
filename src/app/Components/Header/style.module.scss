@@ -1,17 +1,126 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-.nav {
+
+.navMob{
+    display: flex;
+    .headerButtonContainer{
+        transform: scale(0);
+        position: fixed;
+        right: 0px;
+        z-index: 20;
+        @media (max-width: 767px) {
+            transform: scale(1); // Show the button on small screens
+        }
+        .button{
+            position: relative;
+            margin: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .burger{
+            width: 100%;
+            position: relative;
+            z-index: 1;
+            &::after, &::before{
+                content: "";
+                display: block;
+                height: 1px;
+                width: 40%;
+                margin: auto;
+                background-color: black;
+                position: relative;
+                transition: transform 0.3s;
+            }
+        
+            &::after{
+                top: -5px;
+            }
+        
+            &::before{
+                top: 5px;
+            }
+        }
+        
+        .burgerActive{
+        
+            &::after{
+                transform: rotate(45deg);
+                top: -1px;
+            }
+        
+            &::before{
+                transform: rotate(-45deg);
+                top: 0px;
+            }
+            
+        }
+    }
+    @media (min-width: 768px) {
+        display: none; // Show on medium and larger screens
+
+      }
+}
+
+
+
+@media (min-width:475px) {
+    .body {
+        max-width: 475px;
+    }
+}
+
+@media (min-width:640px) {
+    .body {
+        max-width: 640px;
+    }
+}
+
+@media (min-width:768px) {
+    .body {
+        max-width: 768px;
+    }
+}
+
+@media (min-width:1024px) {
+    .body {
+        max-width: 1024px;
+    }
+}
+
+@media (min-width:1284px) {
+    .body {
+        max-width: 1284px;
+    }
+}
+
+@media (min-width:1536px) {
+    .body {
+        max-width: 1536px;
+    }
+}
+.navDesktop {
     font-family: "Raleway", sans-serif;
     font-size: 20px;
     position:absolute;
     display: flex;
     width: 100%;
     flex-direction: row;
-    margin-top: 20px;
     justify-content: space-between;
     box-sizing: border-box;
-    padding-left:50px;
-    padding-right:50px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-top:20px;
+    display: none;
+    @media (min-width: 768px) {
+        display: flex; // Show on medium and larger screens
+      }
     .copyright {
         display:flex;
         flex-direction: row;

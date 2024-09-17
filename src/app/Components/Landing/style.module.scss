@@ -1,45 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+
+@media (min-width:475px) {
+    .body {
+        width: 475px;
+    }
+}
+
+@media (min-width:640px) {
+    .body {
+        width: 640px;
+    }
+}
+
+@media (min-width:768px) {
+    .body {
+        width: 768px;
+    }
+}
+
+@media (min-width:1024px) {
+    .body {
+        width: 1024px;
+    }
+}
+
+@media (min-width:1284px) {
+    .body {
+        width: 1284px;
+    }
+}
+
+@media (min-width:1536px) {
+    .body {
+        width: 1536px;
+    }
+}
+
+
+
 .mainpage {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap:10px;
-    width: 100wh;
+    @media (max-width: 767px) {
+        display: flex;
+    }
+
+    @media (min-width:767px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    gap:40px;
+    width: 100%;
     height: 100vh;
+    box-sizing: border-box;
     background-color: hsl(0, 0%, 0%);
     text-align: center;
     color: rgb(231, 242, 252);
     justify-content: center;
     align-items: center;
-    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-family: "IBM Plex Sans Condensed",
+    sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 30px;
-    // &::before {
-    //     position: fixed;
-    //     content:'';
-    //     pointer-events: none;
-    //     left:calc(50% - 200px);
-    //     filter:blur(250px);
-    //     z-index:0;
-    //     border-radius: 50% 50% 0 0 ;
-    //     width:400px;
-    //     height:400px;
-    //     background-image: linear-gradient(to right, grey,white);
-    // }
+    font-size: 2rem;
+
     .hed {
         display: flex;
         flex-direction: column;
         gap: 5px;
         justify-content: center;
         align-items: center;
-        h1{
-            cursor:None;
+
+        @media (max-width: 767px) {
+            position: absolute;
+            z-index: 2;
         }
+
+        h1 {
+            cursor: None;
+        }
+
         a {
             text-decoration: none;
             color: white;
             transition: 0.3s ease-in-out;
+
             .button {
                 width: fit-content;
                 border: 1px solid white;
@@ -51,20 +96,30 @@
             }
 
         }
+
         a:hover {
-            .button{
-            background-color: white;
-            color: black;
+            .button {
+                background-color: white;
+                color: black;
             }
+
             cursor: pointer;
             border-radius: 50px;
         }
 
     }
-    .img{
-    Image{
+
+    .imgcontainer{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        Image{
+        @media (max-width: 767px) {
+            margin:auto;
+            width: 100%;
+            height:100%;
+        }
         border-radius: 50px;
+        }
     }
-    
-}
 }
