@@ -1,6 +1,7 @@
 import styles from './style.module.scss'
 import Image from 'next/image'
 import pic from './pic.png'
+
 export default function Motivaiton() {
     return (<div className={styles.body}>
         <div className={styles.mainpage}>

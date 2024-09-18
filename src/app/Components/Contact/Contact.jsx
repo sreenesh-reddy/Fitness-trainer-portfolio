@@ -6,29 +6,29 @@ import mail from './mail.png'
 import facebook from './facebook.jpg'
 
 export default function Contact(){
-     return(<>
-     <div className={styles.details} id="Contact">
+     return(<div className={styles.body}>
+     <div className={styles.mainpage} id="Contact">
 
          <div className={styles.logocontainer}>
            <Image src={phonelogo} alt="description" className={styles.logoimage}/>
-               <p> NUMBER      : 9390966534 </p>
+               <p>9390966534 </p>
                </div>
 
          <div className={styles.logocontainer}>
             <Image  src={insta} alt="insta" className={styles.logoimage} />         
-            <p>iNSTAGRAM ID : @fitwithvinnu</p>
+            <p> @fitwithvinnu</p>
             </div> 
 
 
          <div className={styles.logocontainer}>
              <Image  src={facebook} alt="facebook" className={styles.logoimage} />
-            <p>Facebook Id :fitwithvinnu</p>
+            <p>fitwithvinnu</p>
          </div>
 
          <div className={styles.logocontainer}>
             <Image  src={mail} alt="mail" className={styles.logoimage} />
-            <p>G-mail Id    : fitwithvinnu@gmail.com</p>
+            <p> fitwithvinnu@gmail.com</p>
          </div>
      </div>
-     </>)
+     </div>)
 }

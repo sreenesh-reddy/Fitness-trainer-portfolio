@@ -23,15 +23,17 @@ export default function Landing() {
             setip(imgarray[i]);
         }, 1500)
     }, [i])
+    
+    const [click,setClick]=useState(false)
+
     return (<div className={styles.body}>
         <div className={styles.mainpage}>
             <div className={styles.hed}>
-                <h1>TRANSFORM YOUR BODY <br /> TRANSFORM YOUR LIFE</h1>
+                <h1>TRANSFORM YOUR BODY <br/> TRANSFORM YOUR LIFE</h1>
                 <a href="#Contact">
-                    <div className={styles.button} onClick={(x)=>setClick(!x)} >
+                    <div className={styles.button} onClick={(x)=> setClick(!x)} >
                         CONTACT
                     </div>
-                    
                 </a>
                 
             </div>

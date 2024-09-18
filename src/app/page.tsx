@@ -6,8 +6,9 @@ export default function Home() {
     return(
         <>
         <Landing/>
-        {/* <Contact/> */}
+         <Contact/>  
         <Motivation/>
+        <Transformations/>
         </>
         
     )

@@ -3,8 +3,10 @@ import styles from "./style.module.scss"
 import { useState } from "react"
 import Nav from "./nav/Nav"
 import { AnimatePresence } from 'framer-motion';
+import Transformations from "../Transformations/Transformations";
 export default function Header() {
     const [isActive, setIsActive] = useState(false);
+    
 
     return (<div className={styles.body}>
         <div className={styles.navMob}>
@@ -30,7 +32,7 @@ export default function Header() {
             </div>
             <div className={styles.links}>
                 <a href="/home">Home</a>
-                <a href="/bhavani">Transformations</a>
+                <a href="#Transformations" >Transformations</a>
                 <a href="">Testimonals</a>
                 <a href="">About</a>
                 <a href="">Contact</a>
