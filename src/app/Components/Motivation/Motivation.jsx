@@ -4,7 +4,9 @@ import pic from './pic.png'
 export default function Motivaiton() {
     return (<div className={styles.body}>
         <div className={styles.mainpage}>
+        <div className={styles.heading}>
         <h3>MY MOTIVATION</h3>
+        </div>
         <h1>
             NO PAIN <br />
             <div className={styles.imgcontainer}>
