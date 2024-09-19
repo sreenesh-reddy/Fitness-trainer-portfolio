@@ -42,7 +42,7 @@
 .mainpage {
     display: flex;
     flex-direction: column;
-
+    padding:5rem 0;
     @media (min-width:767px) {
         .heading {
             width: 39rem;
@@ -55,10 +55,9 @@
 
     width: 100%;
     height: 100vh;
-    box-sizing: border-box;
-    background-color:hsl(0, 0%, 7%);
+    background-color:white;;
     text-align: center;
-    color: rgb(231, 242, 252);
+    color: black;
     justify-content: center;
     align-items: center;
     font-family: "IBM Plex Sans Condensed",
@@ -69,56 +68,9 @@
     
 
     h3 {
-        border-bottom: 3px solid white;
-        
+        border-bottom: 3px solid black;
     }
 
-    .hed {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-
-        @media (max-width: 767px) {
-            position: absolute;
-            z-index: 2;
-        }
-
-        h1 {
-            cursor: None;
-            
-        }
-
-        a {
-            text-decoration: none;
-            color: white;
-            transition: 0.3s ease-in-out;
-           
-
-            .button {
-                width: fit-content;
-                border: 1px solid white;
-                padding-left: 30px;
-                padding-right: 30px;
-                padding-top: 10px;
-                padding-bottom: 10px;
-                transition: 0.5s ease-in-out;
-            }
-
-        }
-
-        a:hover {
-            .button {
-                background-color: white;
-                color: black;
-            }
-
-            cursor: pointer;
-            border-radius: 50px;
-        }
-
-    }
 
     .imgcontainer {
         display: flex;

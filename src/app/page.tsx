@@ -6,9 +6,11 @@ export default function Home() {
     return(
         <>
         <Landing/>
-         <Contact/>  
         <Motivation/>
         <Transformations/>
+         <Contact/>  
+        
+        
         </>
         
     )

@@ -7,10 +7,10 @@ import clientbefore from './clientbefore.jpg'
 import clientafter from './clientafter.jpg'
 import { useEffect, useState } from "react"
 
-export default function Transformations(){
+export default function Transformations() {
 
     const [imgprofile, setip] = useState(vinbefore)
-    const imgarray = [vinbefore,vinafter]
+    const imgarray = [vinbefore, vinafter]
     const [i, seti] = useState(0);
     useEffect(() => {
         setTimeout(() => {
@@ -27,7 +27,7 @@ export default function Transformations(){
 
 
     const [imgprofile2, setip2] = useState(clientbefore)
-    const imgarray2 = [clientbefore,clientafter]
+    const imgarray2 = [clientbefore, clientafter]
     const [i2, seti2] = useState(0);
     useEffect(() => {
         setTimeout(() => {
@@ -42,20 +42,23 @@ export default function Transformations(){
         }, 1500)
     }, [i2])
 
-    return(
+    return (
         <div className={styles.body}>
-        <div className={styles.mainpage} id="Transformations">
-            <h1> TRANSFORMATIONS</h1>
-        <div className={styles.heading}>
-        
-        </div>
-        <div className={styles.imgcontainer}>
-        <Image src={imgprofile} alt="tans"  width={175} height={275} className={styles.Image}/>
-        <Image src={imgprofile2} alt="tans"  width={175} height={275} className={styles.Image}/>
-        </div>
+            <div className={styles.mainpage} id="Transformations">
+                <div className={styles.heading}>
+                    <h3>TRANSFORMATIONS</h3><br/>
+                </div>
+                <div className={styles.imgcontainer}>
+                    <Image src={imgprofile} alt="tans" width={300}
+                        height={400}
+                        style={{ minWidth: "50%", minHeight: "100%", borderRadius: "50px" }} className={styles.Image} />
+                    <Image src={imgprofile2} alt="tans" width={300}
+                        height={400}
+                        style={{ minWidth: "50%", minHeight: "100%", borderRadius: "50px" }} className={styles.Image} />
+                </div>
 
-        
-        
-    </div>
-    </div>)
+
+
+            </div>
+        </div>)
 }

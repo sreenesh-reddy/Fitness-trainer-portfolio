@@ -8,7 +8,9 @@ import facebook from './facebook.jpg'
 export default function Contact(){
      return(<div className={styles.body}>
      <div className={styles.mainpage} id="Contact">
-
+     <div className={styles.heading}>
+                    <h3>CONTACT</h3><br/>
+         </div>
          <div className={styles.logocontainer}>
            <Image src={phonelogo} alt="description" className={styles.logoimage}/>
                <p>9390966534 </p>
