@@ -23,8 +23,7 @@ export default function Transformations() {
             setip(imgarray[i]);
         }, 1500)
     }, [i])
-
-
+    
     const [imgprofile2, setip2] = useState(clientbefore)
     const imgarray2 = [clientbefore, clientafter]
     const [i2, seti2] = useState(0);
