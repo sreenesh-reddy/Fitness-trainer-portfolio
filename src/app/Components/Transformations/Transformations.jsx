@@ -20,7 +20,6 @@ export default function Transformations() {
             else {
                 seti(i + 1);
             }
-            console.log(imgarray[i]);
             setip(imgarray[i]);
         }, 1500)
     }, [i])
@@ -37,7 +36,6 @@ export default function Transformations() {
             else {
                 seti2(i2 + 1);
             }
-            console.log(imgarray2[i2]);
             setip2(imgarray2[i2]);
         }, 1500)
     }, [i2])

@@ -18,7 +18,7 @@ export default function Header() {
                 </div>
     
                 <AnimatePresence mode="wait">
-                    {isActive && <Nav />}
+                    {isActive && <Nav buttonState={setIsActive}/>}
                 </AnimatePresence>
         </div>
         <div className={styles.navDesktop}>
@@ -32,7 +32,7 @@ export default function Header() {
                 <a href="#Transformations" >Transformations</a>
                 <a href="">Testimonals</a>
                 <a href="">About</a>
-                <a href="">Contact</a>
+                <a href="#Contact">Contact</a>
             </div>
         </div></div>)
 }

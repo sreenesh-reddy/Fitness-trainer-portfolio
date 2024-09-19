@@ -16,7 +16,7 @@ const navItems = [
   },
   {
     title: "Transformations",
-    href: "",
+    href: "#Transformations",
   },
   {
     title: "Testimonals",
@@ -24,19 +24,23 @@ const navItems = [
   },
   {
     title: "About",
-    href: "",
+    href: "#Motivation",
   },
   {
     title: "Contact",
-    href: "",
+    href: "#Contact",
   },
 ]
 
-export default function Nav() {
+export default function Nav({buttonState}) {
 
   const pathname = usePathname();
   const [selectedIndicator, setSelectedIndicator] = useState(pathname);
-
+  const handleLinkClick = (href) => {
+    console.log("Link clicked:", href);
+    setSelectedIndicator(href);
+    buttonState(false); // This closes the menu
+  };
   return (<div className={styles.body}>
     <motion.div variants={menuSlide} initial="initial" animate="enter" exit="exit" className={styles.menu}>
        <div className={styles.body}>
@@ -46,7 +50,7 @@ export default function Nav() {
                     </div>
                     {
                       navItems.map( (data, index) => {
-                        return <Link key={index} data={{...data, index}} isActive={selectedIndicator == data.href} setSelectedIndicator={setSelectedIndicator}></Link>
+                        return <Link key={index} data={{...data, index}} isActive={selectedIndicator == data.href} setSelectedIndicator={setSelectedIndicator} onClick={()=>handleLinkClick(data.href)}></Link>
                       })
                     }
             </div>

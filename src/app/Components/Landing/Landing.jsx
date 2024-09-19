@@ -19,7 +19,6 @@ export default function Landing() {
             else {
                 seti(i + 1);
             }
-            console.log(imgarray[i]);
             setip(imgarray[i]);
         }, 1500)
     }, [i])

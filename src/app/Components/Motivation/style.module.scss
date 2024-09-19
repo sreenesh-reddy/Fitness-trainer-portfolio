@@ -42,7 +42,8 @@
 .mainpage {
     display: flex;
     flex-direction: column;
-    padding:5rem 0;
+    padding-top:5rem;
+    padding-bottom: 8rem;
     @media (min-width:767px) {
         .heading {
             width: 39rem;

@@ -11,7 +11,7 @@ export default function Contact(){
      <div className={styles.heading}>
                     <h3>CONTACT</h3><br/>
          </div>
-         <div className={styles.logocontainer}>
+         {/* <div className={styles.logocontainer}>
            <Image src={phonelogo} alt="description" className={styles.logoimage}/>
                <p>9390966534 </p>
                </div>
@@ -23,13 +23,25 @@ export default function Contact(){
 
 
          <div className={styles.logocontainer}>
-             <Image  src={facebook} alt="facebook" className={styles.logoimage} />
+         <Image  src={mail} alt="mail" className={styles.logoimage} />
             <p>fitwithvinnu</p>
          </div>
 
          <div className={styles.logocontainer}>
             <Image  src={mail} alt="mail" className={styles.logoimage} />
             <p> fitwithvinnu@gmail.com</p>
+         </div> */}
+         <div className={styles.totalContainer}>
+         <div className={styles.logoos}>
+         <Image  src={mail} alt="mail" className={styles.logoimage} />
+         <Image  src={insta} alt="insta" className={styles.logoimage} />
+         <Image src={phonelogo} alt="description" className={styles.logoimage}/> 
+         </div>
+         <div className={styles.logonames}>
+          fitwithvinnu@gmail.com<br/><br/>
+          @fitwithvinnu<br/><br/>
+         9390966534<br/>
+         </div>
          </div>
      </div>
      </div>)
