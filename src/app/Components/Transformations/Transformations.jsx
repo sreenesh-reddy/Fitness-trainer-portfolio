@@ -53,9 +53,6 @@ export default function Transformations() {
                         height={400}
                         style={{ minWidth: "50%", minHeight: "100%", borderRadius: "50px" }} className={styles.Image} />
                 </div>
-
-
-
             </div>
         </div>)
 }

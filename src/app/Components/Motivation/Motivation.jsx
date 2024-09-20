@@ -6,14 +6,14 @@ export default function Motivaiton() {
     return (<div className={styles.body}>
         <div className={styles.mainpage}>
         <div className={styles.heading}>
-        <h3>MY MOTIVATION</h3>
+        <h3>MOTIVATION</h3>
         </div>
         <h1>
-            NO PAIN <br />
+            NO <span>PAIN</span> <br />
             <div className={styles.imgcontainer}>
                 <Image src={pic} width={350} height={300} style={{borderRadius:"50px"}} alt="picture unavailable" />
             </div>
-            NO GAIN
+            NO <span>GAIN</span>
         </h1>
         </div>
     </div>)

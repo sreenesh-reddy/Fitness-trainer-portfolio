@@ -28,7 +28,7 @@ export default function Landing() {
     return (<div className={styles.body}>
         <div className={styles.mainpage}>
             <div className={styles.hed}>
-                <h1>TRANSFORM YOUR BODY <br/> TRANSFORM YOUR LIFE</h1>
+                <h1>TRANSFORM YOUR <span>BODY</span> <br/> TRANSFORM YOUR <span>LIFE</span></h1>
                 <a href="#Contact">
                     <div className={styles.button} onClick={(x)=> setClick(!x)} >
                         CONTACT
