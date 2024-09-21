@@ -42,6 +42,9 @@
 
     @media (min-width:767px) {
         .heading {
+            display:flex;
+            justify-content: center;
+
             width: 39rem;
 
             h3 {

@@ -15,6 +15,11 @@ export default function Motivaiton() {
             </div>
             NO <span>GAIN</span>
         </h1>
+        <a href="#Contact">
+                    <div className={styles.button}>
+                        ABOUT
+                    </div>
+        </a>
         </div>
     </div>)
 }

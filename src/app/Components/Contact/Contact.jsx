@@ -4,11 +4,10 @@ import phonelogo from './phone.png'
 import insta from './insta.jpg'
 import mail from './mail.png'
 import facebook from './facebook.jpg'
-
 export default function Contact() {
    return (<div className={styles.body}>
       <div className={styles.mainpage} id="Contact">
-         <div className={styles.heading}>
+            <div className={styles.heading}>
             <h3>CONTACT</h3>
          </div>
 

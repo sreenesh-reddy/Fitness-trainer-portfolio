@@ -144,12 +144,12 @@
     font-size: 20px;
     position:absolute;
     display: flex;
-    width: 100%;
+    width: 100vw;
     flex-direction: row;
     justify-content: space-between;
     box-sizing: border-box;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
     margin-top:20px;
     display: none;
     @media (min-width: 768px) {
