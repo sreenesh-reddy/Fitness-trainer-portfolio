@@ -6,43 +6,42 @@ body {
     display: flex;
     flex-direction: column;
     background-color:grey;
-    width: 100%;
     justify-content: center;
     
 }
 
 @media (min-width:475px) {
     body {
-        max-width: 475px;
+        max-width: 45rem;
     }
 }
 
 @media (min-width:640px) {
     body {
-        max-width: 640px;
+        max-width: 45rem;
     }
 }
 
 @media (min-width:768px) {
     body {
-        width: 768px;
+        width: 45rem;
     }
 }
 
 @media (min-width:1024px) {
     body {
-        width: 1024px;
+        width: 45rem;
     }
 }
 
 @media (min-width:1284px) {
     body {
-        width: 1284px;
+        width: 45rem;
     }
 }
 
 @media (min-width:1536px) {
     body {
-        width: 1536px;
+        width: 45rem;
     }
 }

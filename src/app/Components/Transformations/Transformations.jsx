@@ -101,7 +101,7 @@ export default function Transformations() {
                     
                    <Image src={img} alt='' width={300}
                     height={400}
-                    style={{ minWidth: "50%", minHeight: "100%", borderRadius: "10px" }} className={styles.Image} />
+                    style={{ minWidth: "50%", minHeight: "100%"}} className={styles.Image} />
                         </div>
                         
                                  ))}
