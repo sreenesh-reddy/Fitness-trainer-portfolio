@@ -4,9 +4,10 @@ body {
     padding-right: 0.5rem; */
     margin: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     background-color:grey;
     justify-content: center;
+    
     
 }
 
@@ -45,3 +46,9 @@ body {
         width: 45rem;
     }
 }
+@media (min-width:1736px) {
+    body {
+        width: 100rem;
+    }
+}
+

@@ -30,8 +30,7 @@ export default function Header() {
             <div className={styles.links}>
                 <a href="/home">Home</a>
                 <a href="#Transformations" >Transformations</a>
-                <a href="">Testimonals</a>
-                <a href="">About</a>
+                <a href="#About">About</a>
                 <a href="#Contact">Contact</a>
             </div>
         </div></div>)

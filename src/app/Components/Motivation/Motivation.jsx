@@ -15,7 +15,7 @@ export default function Motivaiton() {
             </div>
             NO <span>GAIN</span>
         </h1>
-        <a href="#Contact">
+        <a href="#About">
                     <div className={styles.button}>
                         ABOUT
                     </div>

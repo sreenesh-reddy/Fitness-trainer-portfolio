@@ -39,7 +39,7 @@
 
 
 .mainpage{
-    @media (min-width:767px) {
+    @media (min-width:640px) {
         .heading {
             display:flex;
             justify-content: center;
@@ -52,8 +52,8 @@
         }
     }
 
-    color: black;
-    background-color: white;;
+    color: white;
+    background-color: black;
     width: 100wh;
     height: 50%;
     
@@ -67,17 +67,36 @@
     font-size: 1.5rem;
     
     h3 {
-        border-bottom: 3px solid black;
+        border-bottom: 3px solid white;
         
-    }   .totalContainer{
+    }  
+    
+      
+     .totalContainer{
+        
+
+        width:400px;
+        height: fit-content;
+        
+        align-items: center;
+        position:static;
+        
+        .instagramId {
+            display: inline-flex;
+            
+          }
+        
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: 20px auto;
+        margin-left: 30px;
         padding:2rem;
+        gap: 50PX;
+        
         .logoos{
-            display:flex;
+            display:inline-flex;
             flex-direction: column;
-            gap:10px;
-            margin-right: -2rem;;
+            gap:20px;
+            margin-right: -1rem;
         }
         .logoimage{
             width: 2.5rem;
@@ -95,6 +114,10 @@
                 margin-right: 20px;
             } 
         }
+
+
+
+        
         
         
 }
