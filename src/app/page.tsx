@@ -11,7 +11,6 @@ export default function Home() {
         <Landing/>
         <Motivation/>
         <Transformations/>
-        <About/>
         <Contact/>  
         
         

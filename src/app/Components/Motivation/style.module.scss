@@ -37,7 +37,17 @@
     }
 }
 
-
+.pcbody{
+ 
+    @media (max-width:767px){
+        display:none;
+    }
+}
+.mobbody{
+    @media (min-width: 767px){
+        display:none;  
+    }
+}
 
 .mainpage {
     display: flex;
@@ -55,9 +65,10 @@
                 font-size: 70px;
             }
         }
+
     }
 
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color:white;;
     text-align: center;
@@ -68,7 +79,7 @@
     sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 1.5rem;
+    font-size: 2rem;
     a {
         text-decoration: none;
         color: black;
@@ -85,27 +96,68 @@
         }
 
     }
+    .bod{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:10rem;
 
-    a:hover {
-        .button {
-            background-color: red;
-            color: white;
-            border-color: red;
+        .hed {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            justify-content: center;
+            align-items: center;
+    
+            @media (max-width: 767px) {
+                position: absolute;
+                z-index: 2;
+            }
+    
+            h1 {
+                cursor: None;
+                span{
+                    color:red;
+                }
+            }
+    
+            a {
+                text-decoration: none;
+                color: black;
+                transition: 0.3s ease-in-out;
+    
+                .button {
+                    width: fit-content;
+                    border: 1px solid black;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    transition: 0.5s ease-in-out;
+                }
+    
+            }
+    
+            a:hover {
+                .button {
+                    background-color: red;
+                    color: white;
+                    border-color: red;
+                }
+        
+                cursor: pointer;        
+            }
+    
         }
-
-        cursor: pointer;        
-    }
-    h1{
-        span{
-            color:red;
-        }
-    }
- 
-    h3 {
-        border-bottom: 3px solid black;
+    
     }
     
-
+    
+    
+    h3 {
+        border-bottom: 3px solid black;
+        
+    }  
+    
     .imgcontainer {
         display: flex;
         justify-content: center;
