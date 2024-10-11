@@ -4,13 +4,14 @@ import Transformations from "./Components/Transformations/Transformations"
 import Motivation from "./Components/Motivation/Motivation"
 import About from "./Components/About/About"
 import { Link, Element, Events, animateScroll as scroll } from 'react-scroll';
-
+import Clients from "./Components/Clients/Clients"
 export default function Home() {
     return(
         <>
         <Landing/>
         <Motivation/>
-        <Transformations/>
+        {/* <Transformations/> */}
+        <Clients/>
         <Contact/>  
         
         

@@ -52,15 +52,13 @@
 .mainpage {
     display: flex;
     flex-direction: column;
-    padding-top:5rem;
-    padding-bottom: 8rem;
+    padding-top:3rem;
+    padding-bottom: 3rem;
     @media (min-width:767px) {
         .heading {
             display:flex;
             justify-content: center;
-
             width: 39rem;
-
             h3 {
                 font-size: 70px;
             }
@@ -79,12 +77,12 @@
     sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 2rem;
+    font-size: 7rem;
     a {
         text-decoration: none;
         color: black;
         transition: 0.3s ease-in-out;
-
+        font-size:3rem;
         .button {
             width: fit-content;
             border: 3px solid black;
@@ -115,11 +113,11 @@
     
             h1 {
                 cursor: None;
-                span{
-                    color:red;
-                }
+               
             }
-    
+            span{
+                color:red;
+            }
             a {
                 text-decoration: none;
                 color: black;

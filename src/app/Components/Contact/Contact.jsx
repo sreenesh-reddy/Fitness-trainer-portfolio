@@ -6,6 +6,9 @@ import insta from './insta.jpg'
 import mail from './mail.png'
 import facebook from './facebook.jpg'
 import React, { useState } from "react";
+import { FaInstagram } from "react-icons/fa";
+import { IoIosCall } from "react-icons/io";
+import { CgMail } from "react-icons/cg";
 
 export default function Contact() {
 
@@ -44,15 +47,18 @@ export default function Contact() {
       
    return (<div className={styles.body}>
       <div className={styles.mainpage} id="Contact">
-            <div className={styles.heading}>
+            {/* <div className={styles.heading}>
             <h3>CONTACT</h3>
-         </div>
-
+         </div> */}
          <div className={styles.totalContainer}>
             <div className={styles.logoos}>
-               <Image src={mail} alt="mail" className={styles.logoimage} />
-               <Image src={insta} alt="insta" className={styles.logoimage} />
-               <Image src={phonelogo} alt="description" className={styles.logoimage} />
+               {/* <Image src={mail} alt="mail" className={styles.logoimage} /> */}
+               <CgMail className={styles.logoimage} />
+
+               <FaInstagram className={styles.logoimage}/>
+               {/* <Image src={phonelogo} alt="description" className={styles.logoimage} /> */}
+               <IoIosCall className={styles.logoimage} />
+
             </div>
             
             
@@ -92,11 +98,11 @@ export default function Contact() {
       @{instagramID}
       {hoveredInstagram && <span className="prompt" style={{ marginLeft: '10px', color: '#FF5733',fontSize: '9px', }}>Click to visit</span>}
     </div><br /><br />
-  
-               
-               
-               9390966534<br />
+              +91 9390966534<br />
             </div>
+         </div>
+         <div className={styles.contactheading}>
+          LETS WORK TOGETHER!
          </div>
       </div>
    </div>)
