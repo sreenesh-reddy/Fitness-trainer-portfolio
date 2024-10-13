@@ -88,11 +88,13 @@
   border:1px solid white;
   padding: 20px;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.5s ease-in-out;
 }
 
 /* Hover effect for the card 3D transformation */
-
+.cardgrid .card:hover{
+  transform:scale(1.05);
+}
 
 /* Card heading styling */
 .cardgrid .cardheading {
