@@ -36,28 +36,56 @@
     }
 }
 
-/* Container for all cards */
-.cardgrid {
-  display: flex;
-  justify-content: space-around;
+// /* Container for all cards */
+// .cardgrid {
+//   display: flex;
+//   justify-content: space-around;
+//   align-items: center;
+//     flex-direction: row;
+//     padding-top:3rem;
+//     padding-bottom: 3rem;
+//     width: 100vw;
+//     height: 100vh;
+//     background-color:black;
+//     text-align: center;
+//     color: black;
+// }
+
+.mainpage {
+  display:flex;
+  gap:40px;
+  width: 100vw;
+  height: 100vh;
+  padding-top:35rem;
+  padding-bottom: 35rem;
+  box-sizing: border-box;
+  background-color:black;
+  text-align: center;
+  color: rgb(231, 242, 252);
+  justify-content: center;
   align-items: center;
-    flex-direction: row;
-    padding-top:3rem;
-    padding-bottom: 3rem;
-    width: 100vw;
-    height: 100vh;
-    background-color:black;
-    text-align: center;
-    color: black;
+  font-family: "IBM Plex Sans Condensed",
+  sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2rem;
+
+}
+  .cardgrid{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:30px;
 }
 
 /* Styling for individual cards */
 .cardgrid .card {
+  display:grid;
+  grid-template-rows: auto auto 1fr auto auto;
   width: 350px;
-  height: fit-content;
+  
   background: black;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius:50px;
+  border:1px solid white;
   padding: 20px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -96,14 +124,22 @@
 }
 
 /* Button styling */
-.cardgrid .cardbutton {
-  padding: 10px 20px;
+
+.cardbutton {
+  display: block; /* Ensures the button behaves as a block element */
+  margin: 0 auto; 
+  width: 50%;
+  height:3rem;
   border: none;
   border-radius: 5px;
   border: 1px solid white;
   background-color: black;
   color: white;
-  font-size: 16px;
+  font-family: "IBM Plex Sans Condensed",
+  sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -118,6 +154,10 @@
 .cardgrid .lottiecontainer {
   margin: 20px 0;
   transition: transform 0.3s ease;
+  height: 20rem; /* Set a fixed height for uniformity */
+  display: flex;
+  justify-content: center; /* Ensures the Lottie animation is centered horizontally */
+  align-items: center;
 }
 
 

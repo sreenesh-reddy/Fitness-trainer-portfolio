@@ -31,7 +31,9 @@ const Card2 = () => {
           Monthly fee (online): 5000 rs<br/>
           Monthly fee (offline): 15000 rs
           </p>
+          
           <button className={styles.cardbutton}>Show More</button>
+          
       </div>
   );
 };
@@ -51,11 +53,13 @@ const Card3 = () => {
 
 function Services  ()  {
   return (
+    <div className={styles.mainpage}>
       <div className={styles.cardgrid}>
           <Card/>
           <Card2/>
           <Card3/>
           
+      </div>
       </div>
   );
 };
