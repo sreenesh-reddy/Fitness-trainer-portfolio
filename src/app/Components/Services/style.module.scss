@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+@media (min-width:475px) {
+    .body {
+        width: 475px;
+    }
+}
+
+@media (min-width:640px) {
+    .body {
+        width: 640px;
+    }
+}
+@media (min-width:768px) {
+    .body {
+        width: 768px;
+    }
+}
+
+@media (min-width:1024px) {
+    .body {
+        width: 1024px;
+    }
+}
+
+@media (min-width:1284px) {
+    .body {
+        width: 1284px;
+    }
+}
+
+@media (min-width:1536px) {
+    .body {
+        width: 1536px;
+    }
+}
+
+/* Container for all cards */
+.cardgrid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+    flex-direction: row;
+    padding-top:3rem;
+    padding-bottom: 3rem;
+    width: 100vw;
+    height: 100vh;
+    background-color:black;
+    text-align: center;
+    color: black;
+}
+
+/* Styling for individual cards */
+.cardgrid .card {
+  width: 350px;
+  height: fit-content;
+  background: black;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for the card 3D transformation */
+
+
+/* Card heading styling */
+.cardgrid .cardheading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color:white;
+  margin-bottom: 15px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Heading hover effect (glow) */
+.cardgrid .cardheading:hover {
+  color: white;
+  text-shadow: 0  0 15px rgba(0, 255, 145, 1);
+}
+
+/* Description styling */
+.cardgrid .carddescription {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 20px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Description hover effect (glow) */
+.cardgrid .carddescription:hover {
+  color: white;
+  text-shadow: 0 0 15px rgba(255, 69, 0, 1);
+}
+
+/* Button styling */
+.cardgrid .cardbutton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.cardgrid .cardbutton:hover {
+  color: black;
+  background-color:white;
+}
+
+/* Lottie container to hold the animation */
+.cardgrid .lottiecontainer {
+  margin: 20px 0;
+  transition: transform 0.3s ease;
+}
+
+
+
+
+
+  

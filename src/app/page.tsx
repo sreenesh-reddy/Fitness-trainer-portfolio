@@ -5,11 +5,13 @@ import Motivation from "./Components/Motivation/Motivation"
 import About from "./Components/About/About"
 import { Link, Element, Events, animateScroll as scroll } from 'react-scroll';
 import Clients from "./Components/Clients/Clients"
+import Services from "./Components/Services/Services"
 export default function Home() {
     return(
         <>
         <Landing/>
         <Motivation/>
+        <Services/>
         {/* <Transformations/> */}
         <Clients/>
         <Contact/>  
