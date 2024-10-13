@@ -32,7 +32,7 @@ const Card2 = () => {
           Monthly fee (offline): 15000 rs
           </p>
           
-          <button className={styles.cardbutton}>Show More</button>
+          <button className={styles.cardbutton}>SHOW MORE</button>
           
       </div>
   );
