@@ -95,6 +95,21 @@
 .cardgrid .card:hover{
   transform:scale(1.05);
   border:1px solid white;
+  .cardheading{
+    color: red;
+    // text-shadow: 0  0 15px rgba(0, 255, 145, 1);
+  }
+  .cardbutton{
+    color: black;
+    background-color:white;
+  }
+  .carddescription {
+    color: white;
+    span{
+      color:red;
+    }
+  }
+
 }
 
 /* Card heading styling */
@@ -107,24 +122,22 @@
 }
 
 /* Heading hover effect (glow) */
-.cardgrid .cardheading:hover {
-  color: white;
-  text-shadow: 0  0 15px rgba(0, 255, 145, 1);
-}
+
 
 /* Description styling */
 .cardgrid .carddescription {
   font-size: 16px;
-  color: white;
+  color: grey;
   margin-bottom: 20px;
+  font-weight: 500;
   transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 /* Description hover effect (glow) */
-.cardgrid .carddescription:hover {
-  color: white;
-  text-shadow: 0 0 15px rgba(255, 69, 0, 1);
-}
+// .cardgrid .carddescription:hover {
+//   color: white;
+//   text-shadow: 0 0 15px rgba(255, 69, 0, 1);
+// }
 
 /* Button styling */
 

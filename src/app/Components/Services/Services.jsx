@@ -10,13 +10,13 @@ import React from 'react';
 const Card = () => {
   return (
       <div className={styles.card}>
-          <h2 className={styles.cardheading}>Weight Gain/Loss</h2>
+          <h2 className={styles.cardheading}>WEIGHT GAIN/LOSS</h2>
           <div className={styles.lottiecontainer}>
               <Lottie animationData={animationData2} />
           </div>
-          <p className={styles.carddescription}>Online/Offline <br/>
-          Monthly fee : 3000 Rs</p>
-          <button className={styles.cardbutton}>Show More</button>
+          <p className={styles.carddescription}>ONLINE/OFFLINE <br/>
+          Monthly fee : <span>3000 Rs</span></p>
+          <button className={styles.cardbutton}>SHOW MORE</button>
       </div>
   );
 };
@@ -27,9 +27,9 @@ const Card2 = () => {
           <div className={styles.lottiecontainer}>
               <Lottie animationData={animationData1} />
           </div>
-          <p className={styles.carddescription}>Online/Offline <br/>
-          Monthly fee (online): 5000 rs<br/>
-          Monthly fee (offline): 15000 rs
+          <p className={styles.carddescription}> ONLINE/OFFLINE <br/>
+          Monthly fee (online): <span>5000 rs</span><br/>
+          Monthly fee (offline): <span>15000 rs</span>
           </p>
           
           <button className={styles.cardbutton}>SHOW MORE</button>
@@ -40,13 +40,13 @@ const Card2 = () => {
 const Card3 = () => {
   return (
       <div className={styles.card}>
-          <h2 className={styles.cardheading}>Diet Advisory</h2>
+          <h2 className={styles.cardheading}>DIET ADVISORY</h2>
           <div className={styles.lottiecontainer}>
               <Lottie animationData={animationData3} width={500} height={500} />
           </div>
-          <p className={styles.carddescription}>Online/Offline<br/>
-          Monthly fee : 2000 Rs </p>
-          <button className={styles.cardbutton}>Show More</button>
+          <p className={styles.carddescription}> ONLINE/OFFLINE<br/>
+          Monthly fee : <span>2000 Rs</span> </p>
+          <button className={styles.cardbutton}>SHOW MORE</button>
       </div>
   );
 };
