@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import styles from './style.module.scss';
 import Lottie from "lottie-react";
-import anime from './Animation - 1728757024864.json';
+import anime from './Animation - 1728926650942.json';
 
 
   
