@@ -6,12 +6,14 @@ import About from "./Components/About/About"
 import { Link, Element, Events, animateScroll as scroll } from 'react-scroll';
 import Clients from "./Components/Clients/Clients"
 import Services from "./Components/Services/Services"
+import BMI from "./Components/BMI/BMI"
 export default function Home() {
     return(
         <>
         <Landing/>
         <Motivation/>
         <Services/>
+        <BMI/>
         {/* <Transformations/> */}
         <Clients/>
         <Contact/>  
