@@ -1,0 +1,113 @@
+
+
+
+.mainpage{
+    display: flex;
+    flex-direction: column;
+    padding-top:3rem;
+    padding-bottom: 3rem;width: 100vw;
+    height: fit-content;
+    background-color:white;;
+    text-align: center;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    font-family: "IBM Plex Sans Condensed",
+    sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    
+    
+}
+.mainpage .header{
+    text-align: center;
+    color:black;
+    font-size: 5rem;
+    
+  }
+  
+  .card{
+    display: inline-flex;
+    flex-direction: row;
+    width: 80%;
+    height:fit-content;
+    align-items: center;
+  }
+
+
+.bmrcalculator {
+    
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+   
+  
+  .bmrcalculator .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .bmrcalculator label {
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    
+    width: 27rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .bmrcalculator input,
+  .bmrcalculator select {
+    min-width:30%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+  
+  .bmrcalculator input:focus,
+  .bmrcalculator select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .bmrcalculator .btn {
+    width: 100%;
+    padding: 10px;
+    background-color:white;
+    color:black;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid black;
+  }
+  
+  .bmrcalculator .btn:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .bmrcalculator .results {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+  }
+  
+  .bmrcalculator .results h3,
+  .bmrcalculator .results h4 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .bmrcalculator .results h4 {
+    margin-top: 10px;
+  }
+  
