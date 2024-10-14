@@ -23,7 +23,7 @@ const Card = () => {
 const Card2 = () => {
   return (
       <div className={styles.card}>
-          <h2 className={styles.cardheading}>Personal Trainer</h2>
+          <h2 className={styles.cardheading}>PERSONAL TRAINING</h2>
           <div className={styles.lottiecontainer}>
               <Lottie animationData={animationData1} />
           </div>

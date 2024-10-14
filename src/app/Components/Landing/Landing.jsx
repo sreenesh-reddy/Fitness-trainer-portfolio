@@ -31,7 +31,7 @@ export default function Landing() {
                 <h1>TRANSFORM YOUR <span>BODY</span> <br/> TRANSFORM YOUR <span>LIFE</span></h1>
                 <a href="#Contact">
                     <div className={styles.button} onClick={(x)=> setClick(!x)} >
-                        CONTACT
+                        SERVICES
                     </div>
                 </a>
                 
