@@ -128,7 +128,7 @@ export default function BMI(){
           
         </div>
 
-        <button type="submit" className={styles.btn}>Calculate BMR</button>
+        <button type="submit" className={styles.btn}>CALCULATE BMR</button>
       </form>
 
       {bmr && (
