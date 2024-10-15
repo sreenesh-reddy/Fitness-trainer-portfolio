@@ -33,6 +33,7 @@
     width: 80%;
     height:fit-content;
     align-items: center;
+    justify-content: center;
   }
 
 .lottie{
@@ -104,6 +105,7 @@
     font-size: 1.5rem;
     cursor: pointer;
     border: 1px solid black;
+    transition:0.5s ease-in-out
   }
   
   .bmrcalculator .btn:hover {
@@ -112,19 +114,28 @@
   }
   
   .bmrcalculator .results {
+    display:flex;
+    padding:12px;
+    flex-direction: column;
+    justify-content: center;
     margin-top: 20px;
-    padding: 15px;
+    width:500px;
     background-color: #e9ecef;
     border-radius: 5px;
+    font-size:1.4rem;
+    text-align: left;
+    font-weight: 500;
   }
   
-  .bmrcalculator .results h3,
-  .bmrcalculator .results h4 {
+  .bmrcalculator .results .he,
+  .bmrcalculator .results .ha {
     margin: 0;
-    color: #333;
+    color: black;
+    font-weight: 1000;
+
   }
   
-  .bmrcalculator .results h4 {
+  .bmrcalculator .results .ha {
     margin-top: 10px;
   }
   
