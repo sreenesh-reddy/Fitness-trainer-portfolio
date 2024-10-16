@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import styles from './style.module.scss';
 import Lottie from "lottie-react";
-import anime from './Animation - 1728757024864.json';
+import anime from './Animation - 1728926650942.json';
 
 
   
@@ -17,10 +17,14 @@ export default function BMI(){
   const [activityLevel, setActivityLevel] = useState("sedentary");
   const [bmr, setBmr] = useState(null);
   const [calories, setCalories] = useState(null);
-
+  const [negvalues,setnegvalues] =useState(false);
   const calculateBMR = () => {
     let bmrValue;
-
+    if(age<=0 || weight <=0 || height <=0){
+      setnegvalues(true);
+    } 
+    else{
+      setnegvalues(false);
     if (gender === "male") {
       bmrValue = 88.36 + 13.4 * weight + 4.8 * height - 5.7 * age;
     } else {
@@ -29,6 +33,7 @@ export default function BMI(){
 
     setBmr(bmrValue);
     calculateCalories(bmrValue);
+  }
   };
 
   const calculateCalories = (bmrValue) => {
@@ -128,16 +133,22 @@ export default function BMI(){
           
         </div>
 
-        <button type="submit" className={styles.btn}>Calculate BMR</button>
+        <button type="submit" className={styles.btn}>CALCULATE BMR</button>
       </form>
-
+      {negvalues &&(
+        <div className={styles.results}>
+        <span className={styles.he}>ENTER POSITIVE VALUES ONLY</span><br/>
+        for age, weight and height
+        
+      </div>
+      )}
       {bmr && (
         <div className={styles.results}>
-          <h3>Your BMR: {bmr.toFixed(2)} calories/day</h3>
-          <h4>
-            Estimated Calorie Needs (based on activity level):{" "}
+          <span className={styles.he}>YOUR BMR:</span> {bmr.toFixed(2)} calories/day <br/><br/>
+          <span className={styles.ha}>
+            Estimated Calorie Needs (based on activity level):{" "}</span>
             {calories.toFixed(2)} calories/day
-          </h4>
+          
         </div>
       )}
     </div>
