@@ -25,7 +25,7 @@ export default function Landing() {
     
     const [click,setClick]=useState(false)
 
-    return (<div className={styles.body}>
+    return (
         <div className={styles.mainpage}>
             <div className={styles.hed}>
                 <h1>TRANSFORM YOUR <span>BODY</span> <br/> TRANSFORM YOUR <span>LIFE</span></h1>
@@ -40,12 +40,12 @@ export default function Landing() {
                 <Image
                     src={imgprofile}
                     alt="profile image"
-                    width={300}
-                    height={400}
-                    style={{minWidth:"50%", minHeight:"100%",borderRadius:"50px"}}
+                    width={450}
+                    height={500}
+                    style={{borderRadius:"50px"}}
                     className={styles.Image}
                 />
             </div>
         </div>
-    </div>)
+    )
 }

@@ -45,11 +45,12 @@ export default function Contact() {
          window.open(gmailUrl, '_self'); // Opens the default email client
        };
       
-   return (<div className={styles.body}>
+   return (
       <div className={styles.mainpage} id="Contact">
             {/* <div className={styles.heading}>
             <h3>CONTACT</h3>
          </div> */}
+         <div className={styles.divide}>
          <div className={styles.totalContainer}>
             <div className={styles.logoos}>
                {/* <Image src={mail} alt="mail" className={styles.logoimage} /> */}
@@ -101,9 +102,13 @@ export default function Contact() {
               +91 9390966534<br />
             </div>
          </div>
+         
+         </div>
+
          <div className={styles.contactheading}>
           LETS WORK TOGETHER!
          </div>
+
       </div>
-   </div>)
+   )
 }

@@ -50,10 +50,21 @@
 }
 
 .mainpage {
+    @media (max-width:1284px) {
+        width: fit-content;
+        
+        height: fit-content;
+        
+      }
+      @media (max-width:767px){
+        padding-top:0;
+        padding-bottom: 0;
+        font-size: 5rem;
+        margin-bottom: 1rem;
+      }
     display: flex;
     flex-direction: column;
-    padding-top:3rem;
-    padding-bottom: 3rem;
+    padding: 2rem;
     @media (min-width:767px) {
         .heading {
             display:flex;
@@ -68,6 +79,7 @@
 
     width: 100vw;
     height: 100vh;
+    
     background-color:white;;
     text-align: center;
     color: black;
@@ -82,7 +94,7 @@
         text-decoration: none;
         color: black;
         transition: 0.3s ease-in-out;
-        font-size:3rem;
+        font-size:5rem;
         .button {
             width: fit-content;
             border: 3px solid black;
@@ -122,15 +134,18 @@
                 text-decoration: none;
                 color: black;
                 transition: 0.3s ease-in-out;
+                
     
                 .button {
-                    width: fit-content;
+                    
+                   
                     border: 1px solid black;
                     padding-left: 30px;
                     padding-right: 30px;
                     padding-top: 10px;
                     padding-bottom: 10px;
                     transition: 0.5s ease-in-out;
+                    
                 }
     
             }

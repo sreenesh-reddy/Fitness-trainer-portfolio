@@ -29,13 +29,13 @@ export default function Motivaiton() {
 
             <div className={styles.mobbody}>
                 <div className={styles.mainpage}>
-                    <div className={styles.heading}>
+                    {/* <div className={styles.heading}>
                         <h3>MOTIVATION</h3>
-                    </div>
+                    </div> */}
                     <h1>
                         NO <span>PAIN</span> <br />
                         <div className={styles.imgcontainer}>
-                            <Image src={pic} width={350} height={300} style={{ borderRadius: "50px" }} alt="picture unavailable" />
+                            <Image src={pic}style={{ borderRadius: "50px" }} alt="picture unavailable" />
                         </div>
                         NO <span>GAIN</span>
                     </h1>
