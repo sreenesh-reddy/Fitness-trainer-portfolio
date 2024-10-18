@@ -52,12 +52,20 @@
 // }
 
 .mainpage {
+  @media (max-width:1284px) {
+    width: fit-content;
+    height: fit-content;
+  }
+  @media (max-width:425px) {
+    
+    
+  }
   display:flex;
   gap:40px;
   width: 100vw;
   height: 100vh;
-  padding-top: 25rem;
-  padding-bottom: 25rem;
+  padding: 3rem;
+  
   box-sizing: border-box;
   background-color:black;
   text-align: center;
@@ -72,6 +80,11 @@
 
 }
   .cardgrid{
+    @media (max-width:425px) {
+    
+    
+    }
+    
   display:grid;
   grid-template-columns: repeat(3,1fr);
   gap:30px;
@@ -79,9 +92,11 @@
 
 /* Styling for individual cards */
 .cardgrid .card {
+ 
   display:grid;
   grid-template-rows: auto auto 1fr auto auto;
   width: 350px;
+ 
   
   background: black;
   border-radius:50px;

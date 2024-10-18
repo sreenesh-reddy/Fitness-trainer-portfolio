@@ -14,10 +14,11 @@ export default function Home() {
         <Motivation/>
         <Services/>
         <BMI/>
-        {/* <Transformations/> */}
+         
         <Clients/>
-        <Contact/>  
-        
+          
+         
+         <Contact/>
         
         </>
         

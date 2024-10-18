@@ -3,6 +3,16 @@
 
 
 .mainpage{
+  @media (max-width:1284px) {
+    width: fit-content;
+    height: fit-content;
+  }
+  @media (max-width:427px) {
+   display: grid;
+   
+    
+  }
+
     display: flex;
     flex-direction: column;
     padding-top:15rem;
@@ -20,20 +30,22 @@
     
     
 }
-.mainpage .header{
-    text-align: center;
-    color:black;
-    font-size: 5rem;
-    
-  }
+
   
   .card{
+    @media (max-width:426px) {
+      display: grid;
+      grid-template-columns: 1fr; /* 1 column */
+      grid-template-rows: 1fr 1fr;
+      justify-content: center;
+      align-items: center;
+      padding: 8rem;
+     }
     display: inline-flex;
     flex-direction: row;
     width: 80%;
     height:fit-content;
     align-items: center;
-    justify-content: center;
   }
 
 .lottie{
@@ -42,6 +54,7 @@
 }
 .bmrcalculator {
     
+ 
     margin: 0 auto;
     padding: 55px;
     padding-left:75px;
