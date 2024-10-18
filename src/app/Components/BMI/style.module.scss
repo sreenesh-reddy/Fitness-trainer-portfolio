@@ -3,22 +3,20 @@
 
 
 .mainpage{
-  @media (max-width:1284px) {
-    width: fit-content;
-    height: fit-content;
-  }
+ 
   @media (max-width:427px) {
    display: grid;
-   
+   width: 100%;
+   padding: 0;
     
   }
 
     display: flex;
     flex-direction: column;
-    padding-top:15rem;
-    padding-bottom: 15rem;width: 100vw;
+    padding: 4rem;
+    width: 100wh;
     height: fit-content;
-    background-color:white;;
+    background-color:pink;
     text-align: center;
     color: black;
     justify-content: center;
@@ -39,11 +37,15 @@
       grid-template-rows: 1fr 1fr;
       justify-content: center;
       align-items: center;
-      padding: 8rem;
+      padding: 2rem;
+      width: 100%;
+     
      }
+     
     display: inline-flex;
     flex-direction: row;
-    width: 80%;
+    width: 100%;
+    
     height:fit-content;
     align-items: center;
   }
@@ -53,7 +55,10 @@
   width:25rem;
 }
 .bmrcalculator {
+  @media (max-width:426px) {
+    width: 90%;
     
+  }
  
     margin: 0 auto;
     padding: 20px;

@@ -1,50 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-@media (min-width:475px) {
-    .body {
-        width: 475px;
-    }
-}
 
-@media (min-width:640px) {
-    .body {
-        width: 640px;
-    }
-}
-
-@media (min-width:768px) {
-    .body {
-        width: 768px;
-    }
-}
-
-@media (min-width:1024px) {
-    .body {
-        width: 1024px;
-    }
-}
-
-@media (min-width:1284px) {
-    .body {
-        width: 1284px;
-    }
-}
-
-@media (min-width:1536px) {
-    .body {
-        width: 1536px;
-    }
-}
 .navMob{
-    display: flex;
-    width: 45rem;
+    display: normal;
+    background-color: hsl(0, 0%, 7%);
+   padding: 1rem;
+   font-size: 3rem;
     .headerButtonContainer{
+        padding: 2rem;
         transform: scale(0);
         position: fixed;
         right: 0px;
-        z-index: 20;
+        // z-index: 0;
         @media (max-width: 767px) {
-            transform: scale(1); // Show the button on small screens
+            transform: scale(2); // Show the button on small screens
         }
         .button{
             position: relative;
@@ -97,6 +66,41 @@
             
         }
     }
+    .copyright {
+        display:flex;
+        margin-left: 50px;
+       
+        align-items: center;
+        gap:30px;
+        span.copy{
+            color:white;
+            transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+        }
+        .names{
+            display: flex;
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
+            margin-left: 30px;
+        span.authors {
+            color: white;
+            transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+            transform: translateX(-100%);
+            padding:0;
+            will-change: transform;
+            opacity:0;
+        }
+    }
+    }
+    .copyright:hover{
+        span.copy{
+            transform: rotate(360deg);
+        }
+        span.authors{
+            transform: translateX(0);
+            opacity:1;
+        }
+    }
     @media (min-width: 768px) {
         display: none; // Show on medium and larger screens
 
@@ -105,47 +109,13 @@
 
 
 
-@media (min-width:475px) {
-    .body {
-        max-width: 475px;
-    }
-}
-
-@media (min-width:640px) {
-    .body {
-        max-width: 640px;
-    }
-}
-
-@media (min-width:768px) {
-    .body {
-        max-width: 768px;
-    }
-}
-
-@media (min-width:1024px) {
-    .body {
-        max-width: 1024px;
-    }
-}
-
-@media (min-width:1284px) {
-    .body {
-        max-width: 1284px;
-    }
-}
-
-@media (min-width:1536px) {
-    .body {
-        max-width: 1536px;
-    }
-}
 .navDesktop {
     font-family: "Raleway", sans-serif;
     font-size: 20px;
     position:absolute;
     display: flex;
-    width: 100wh;
+     width: fit-content;
+     
     flex-direction: row;
     justify-content: space-between;
     padding-left: 3.5rem;

@@ -38,12 +38,24 @@ export default function Landing() {
             </div>
             <div className={styles.imgcontainer}>
                 <Image
+                
                     src={imgprofile}
                     alt="profile image"
                     width={450}
                     height={500}
                     style={{borderRadius:"50px"}}
-                    className={styles.Image}
+                    
+                />
+            </div>
+            <div className={styles.imgcontainer2}>
+                <Image
+                
+                    src={imgprofile}
+                    alt="profile image"
+                    width={900}
+                    height={900}
+                    style={{borderRadius:"50px"}}
+                    
                 />
             </div>
         </div>

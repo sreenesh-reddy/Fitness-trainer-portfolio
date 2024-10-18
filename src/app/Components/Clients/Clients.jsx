@@ -30,7 +30,7 @@ export default function Clients(){
       <div className={styles.mainpage}>
 
       <div className={styles.content}>
-            <div>
+            <div className={styles.contentgrid}>
                  <div className={styles.name}>M SURESH</div> 
                  <div className={styles.subhead}>25 years 1 year consistency</div>
                 <div className={styles.background}>
@@ -38,10 +38,14 @@ export default function Clients(){
                     with consistent weight lifting, cardio, good diet under guidance, he achieved his dream physquie.
                 </div>
             </div>
+            <div>
             <Image src={img2} width={320} height={390} style={{ borderRadius:"50px"}}/>
+            </div>
         </div>
         <div className={styles.content1}>
+            <div>
             <Image src={img1} width={320} height={390} style={{ borderRadius:"50px"}}/>
+            </div>
             <div>
                  <div className={styles.name}>K VINAY</div> 
                  <div className={styles.subhead}>22 years 1.5 years consistency</div>
