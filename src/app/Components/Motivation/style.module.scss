@@ -104,7 +104,8 @@
         font-size:5rem;
         .button {
             width: fit-content;
-            border: 3px solid black;
+            border: 10px solid black;
+            color:black;
             padding-left: 3.5rem;
             padding-right: 3.5rem;
             padding-top: 0.5rem;
@@ -162,6 +163,7 @@
                     background-color: red;
                     color: white;
                     border-color: red;
+                
                 }
         
                 cursor: pointer;        
