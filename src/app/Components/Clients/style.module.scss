@@ -37,14 +37,13 @@
 // }
 
 .mainpage {
-   
-    
-    @media (max-width:760px) {
+  
+    // @media (max-width:760px) {
      
         
-        padding-bottom: 25rem;
-        flex-direction: column;
-    }
+        
+    //     flex-direction: column;
+    // }
     
     // @media (min-width:768px) {
     //     .heading {
@@ -57,7 +56,7 @@
     //         }
     //     }
     // }
-    
+    padding: 5rem;
 
    margin: 0;
     background-color:black;
@@ -72,18 +71,32 @@
     font-weight: 700;
     font-style: normal;
     font-size: 1.5rem;
-    padding:20rem 0px 20rem 0px;
+    // padding:20rem 0px 20rem 0px;
     // .heading {
     //     font-weight: 100;
     //     font-size:3rem;
     //     color:white;
     // }
     .content{
-        @media (max-width:426){
-            display: flex;
-            flex-direction: column;
+        
+        @media (max-width:500px){
+           
+            grid-template-columns: repeat(2,0.3fr);
+            .contentimg{
+                display: none;
+            }
+           
+           
         }
-       
+        @media (min-width:500px) {
+            .contentimg1{
+                display: none;
+            }
+            
+        }
+     
+        justify-content: center;
+        align-items: center;
         display:grid;
         grid-template-columns: repeat(2,0.5fr);
         text-align: left;
@@ -91,7 +104,7 @@
         padding:30px;
         margin-top: 30px;
         margin-bottom: 30px;
-        justify-items: right;
+        justify-items: center;
         .contentgrid{
         .name{
             font-size:5rem;
@@ -111,13 +124,29 @@
     }
     }
       
+
+
+
 .content1{
-    @media (max-width:426){
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+    @media (max-width:500px){
+           
+        grid-template-columns: repeat(2,0.3fr);
+        .contentimg{
+            display: none;
+        }
+       
+       
     }
-    
-    display:grid;
+    @media (min-width:500px) {
+        .contentimg1{
+            display: none;
+        }
+        
+    }
+   
+    justify-content: center;
+
+align-items: center;    display:grid;
     grid-template-columns: repeat(2,0.5fr);
     text-align: left;
     grid-gap:60px;
@@ -143,13 +172,18 @@
 }
   
 a {
-    
+    @media (max-width:500px) {
+        width: 30rem;
+        font-size: 3rem;
+        
+    }
     text-decoration: none;
     color: white;
     transition: 0.3s ease-in-out;
     margin-top:100px;
     .button {
-        width: fit-content;
+
+        width: 100%;
         border: 1px solid white;
         padding-left: 30px;
         padding-right: 30px;

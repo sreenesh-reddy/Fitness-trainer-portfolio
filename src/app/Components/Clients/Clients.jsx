@@ -38,13 +38,19 @@ export default function Clients(){
                     with consistent weight lifting, cardio, good diet under guidance, he achieved his dream physquie.
                 </div>
             </div>
-            <div>
+            <div className={styles.contentimg}>
             <Image src={img2} width={320} height={390} style={{ borderRadius:"50px"}}/>
+            </div>
+            <div className={styles.contentimg1}>
+            <Image src={img2} width={550} height={790} style={{ borderRadius:"50px"}}/>
             </div>
         </div>
         <div className={styles.content1}>
-            <div>
+            <div className={styles.contentimg}>
             <Image src={img1} width={320} height={390} style={{ borderRadius:"50px"}}/>
+            </div>
+            <div className={styles.contentimg1}>
+            <Image src={img1} width={550} height={790} style={{ borderRadius:"50px"}}/>
             </div>
             <div>
                  <div className={styles.name}>K VINAY</div> 

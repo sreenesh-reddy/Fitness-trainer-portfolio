@@ -4,19 +4,19 @@
 
 .mainpage{
  
-  @media (max-width:427px) {
-   display: grid;
-   width: 100%;
-   padding: 0;
+  // @media (max-width:427px) {
+  //  display: grid;
+  //  width: 100%;
+  //  padding: 0;
     
-  }
+  // }
 
     display: flex;
     flex-direction: column;
     padding: 4rem;
     width: 100wh;
     height: fit-content;
-    background-color:pink;
+   
     text-align: center;
     color: black;
     justify-content: center;
@@ -31,16 +31,16 @@
 
   
   .card{
-    @media (max-width:426px) {
-      display: grid;
-      grid-template-columns: 1fr; /* 1 column */
-      grid-template-rows: 1fr 1fr;
-      justify-content: center;
-      align-items: center;
-      padding: 2rem;
-      width: 100%;
+    // @media (max-width:426px) {
+    //   display: grid;
+    //   grid-template-columns: 1fr; /* 1 column */
+    //   grid-template-rows: 1fr 1fr;
+    //   justify-content: center;
+    //   align-items: center;
+    //   padding: 2rem;
+    //   width: 100%;
      
-     }
+    //  }
      
     display: inline-flex;
     flex-direction: row;
@@ -56,7 +56,7 @@
 }
 .bmrcalculator {
   @media (max-width:426px) {
-    width: 90%;
+    width: 40%;
     
   }
  
