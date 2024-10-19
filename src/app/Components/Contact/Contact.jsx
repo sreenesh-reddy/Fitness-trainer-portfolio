@@ -106,7 +106,7 @@ export default function Contact() {
          </div>
 
          <div className={styles.contactheading}>
-          LETS WORK TOGETHER!
+         <div className={styles.tagline}>LETS WORK TOGETHER!</div> 
          </div>
 
       </div>

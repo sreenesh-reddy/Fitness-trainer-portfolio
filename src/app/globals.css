@@ -1,7 +1,9 @@
 body{
-    width:min-content;
-    height: fit-content;
+   width:min-content;
+   height: fit-content;
     margin: 0;
+    padding: 0;
+   
     
     
 }
