@@ -23,13 +23,15 @@
         justify-content: center;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
+        .contactheading{
         .tagline{
             display:flex;
             font-size: 7rem;
-            justify-content: center;
-            align-content: center;
-
+            
         }
+        justify-content: center;
+        align-content: center;
+    }
         .totalContainer{
             width: 75rem;
         }
