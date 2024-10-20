@@ -225,13 +225,14 @@
 
 .mainpage {
   overflow: hidden;
-  min-width: 100%;
+  min-width: 90%;
   max-width: 100vw;
+  height: fit-content;
+  min-height: 100vh;
   display: flex;
   gap: 40px;
   margin: 0; // Ensures no margin around mainpage
-  height: fit-content;
-  min-height: 100vh;
+  
   background-color: black;
   text-align: center;
   color: rgb(231, 242, 252);
