@@ -1,13 +1,9 @@
 body{
    width:100wh;
    height: 100vh;
+   overflow-x: hidden;
     margin: 0;
     padding: 0;
-    .navMobile{
-        z-index: 99;
-    }
-    .hed{
-        z-index:2;
-    }
+    scroll-behavior: smooth;
 }
 
