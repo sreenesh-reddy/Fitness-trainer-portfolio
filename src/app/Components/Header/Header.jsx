@@ -10,11 +10,7 @@ export default function Header() {
 
     return (<div>
         <div className={styles.navMob}>
-        <div className={styles.copyright}>
-                <span className={styles.copy}>&copy;</span>
-                <div className={styles.names}><span className={styles.authors}>Code by Sreenesh and bhavani</span></div>
-
-            </div>
+       
             <div className={styles.headerButtonContainer}>
                     <div onClick={() => { setIsActive(!isActive) }} className={`${styles.button}`}>
                         <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}></div>

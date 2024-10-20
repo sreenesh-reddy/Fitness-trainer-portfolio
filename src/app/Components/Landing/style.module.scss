@@ -45,16 +45,18 @@
     @media (max-width: 426px) {
         display: flex;
         flex-direction: column;
-        font-size: 4rem;
+        font-size: 1rem;
+        max-height: 100vh;
+        min-height:100%;
+        width: 100%;
       
       
-      
-    //   .imgcontainer{
-    //     display: none;
-    //   }
-    //   .imgcontainer2{
-    //     display: normal;
-    //   }
+      .imgcontainer{
+        display: none;
+      }
+      .imgcontainer2{
+        display: normal;
+      }
        
     }
     // @media (max-width: 767px) {
@@ -82,7 +84,8 @@
     font-weight: 700;
     font-style: normal;
     font-size: 2rem;
-
+    overflow: hidden;
+    width: 100%;
     .hed {
         display: flex;
         flex-direction: column;
