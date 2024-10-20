@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { slide, scale } from '../../anim';
 
-export default function Linkk({data, isActive, setSelectedIndicator}) {
+export default function Linkk({data, isActive, setSelectedIndicator, onclick}) {
   
     const { title, href, index} = data;
   
@@ -15,6 +15,7 @@ export default function Linkk({data, isActive, setSelectedIndicator}) {
         variants={slide} 
         initial="initial" 
         animate="enter" 
+        onClick={onclick}
         exit="exit"
       >
         <motion.div 

@@ -37,11 +37,10 @@ export default function Nav({buttonState}) {
   const pathname = usePathname();
   const [selectedIndicator, setSelectedIndicator] = useState(pathname);
   const handleLinkClick = (href) => {
-    console.log("Link clicked:", href);
     setSelectedIndicator(href);
     buttonState(false); // This closes the menu
   };
-  return (<div className={styles.body}>
+  return (<div>
     <motion.div variants={menuSlide} initial="initial" animate="enter" exit="exit" className={styles.menu}>
        <div className={styles.body}>
             <div onMouseLeave={() => {setSelectedIndicator(pathname)}} className={styles.nav}>
@@ -50,11 +49,14 @@ export default function Nav({buttonState}) {
                     </div>
                     {
                       navItems.map( (data, index) => {
-                        return <Link key={index} data={{...data, index}} isActive={selectedIndicator == data.href} setSelectedIndicator={setSelectedIndicator} onClick={()=>handleLinkClick(data.href)}></Link>
+                        return <Link key={index} data={{...data, index}} isActive={selectedIndicator == data.href} setSelectedIndicator={setSelectedIndicator} onclick={()=>handleLinkClick(data.href)}></Link>
                       })
                     }
             </div>
-            <Footer />
+            <div className={styles.copyright}>
+                <span className={styles.copy}>&copy;</span>
+                <div className={styles.names}><span className={styles.authors}>Code by Sreenesh and bhavani</span></div>
+            </div>
         </div>
         <Curve />
     </motion.div>

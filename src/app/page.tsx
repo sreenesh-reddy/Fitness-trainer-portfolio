@@ -10,16 +10,12 @@ import BMI from "./Components/BMI/BMI"
 export default function Home() {
     return(
         <>
-        <Landing/>
-        <Motivation/>
+        {/* <Landing/>
+         <Motivation/> */}
         <Services/>
         <BMI/>
-         
-        <Clients/>
-          
-         
+        <Clients/> 
          <Contact/>
-        
         </>
         
     )

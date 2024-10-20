@@ -8,7 +8,7 @@ export default function Header() {
     const [isActive, setIsActive] = useState(false);
     
 
-    return (<div className={styles.body}>
+    return (<div>
         <div className={styles.navMob}>
         <div className={styles.copyright}>
                 <span className={styles.copy}>&copy;</span>

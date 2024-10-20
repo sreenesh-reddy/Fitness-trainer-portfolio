@@ -3,19 +3,18 @@
 
 .navMob{
     display: normal;
-    background-color: hsl(0, 0%, 7%);
-   padding: 1rem;
-   font-size: 3rem;
+    background: transparent;
+    margin-left:1rem;
     .headerButtonContainer{
-        padding: 2rem;
-        transform: scale(0);
+        
+        transform: scale(1);
         position: fixed;
-        right: 0px;
-        // z-index: 0;
-        @media (max-width: 767px) {
-            transform: scale(2); // Show the button on small screens
-        }
+        top:0;
+        right:0;
+        z-index: 20;
+
         .button{
+            z-index: 99;
             position: relative;
             margin: 20px;
             width: 50px;
@@ -31,7 +30,7 @@
         .burger{
             width: 100%;
             position: relative;
-            z-index: 1;
+            z-index: 1009;
             &::after, &::before{
                 content: "";
                 display: block;
@@ -53,7 +52,7 @@
         }
         
         .burgerActive{
-        
+            z-index: 10009;
             &::after{
                 transform: rotate(45deg);
                 top: -1px;
@@ -111,19 +110,19 @@
 
 .navDesktop {
     font-family: "Raleway", sans-serif;
-    font-size: 20px;
+    font-size:1rem;
     position:absolute;
-    display: flex;
-     width: fit-content;
-     
+    margin-top: 20px;
+     width: 100%;   
+     overflow:hidden;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
-    margin-top:20px;
-    display: none;
-    @media (min-width: 768px) {
-        display: flex; // Show on medium and larger screens
+    margin:0;
+    padding:0;
+    display: flex;
+    box-sizing: border-box;
+    @media (max-width: 767px) {
+        display: none; // Show on medium and larger screens
       }
     .copyright {
         display:flex;
@@ -138,7 +137,7 @@
             position: relative;
             overflow: hidden;
             white-space: nowrap;
-            margin-left: 5px;
+            margin-left:0.5rem;
         span.authors {
             color: white;
             transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
@@ -162,8 +161,9 @@
     .links {
         display: flex;      
         flex-direction: row;
-        gap: 50px;
-        margin-left: 20rem;
+        margin-left:1rem;
+        gap:30px;
+        
         a {
             text-decoration: none;
             color: white;

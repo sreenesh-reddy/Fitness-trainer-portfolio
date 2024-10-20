@@ -1,140 +1,306 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-
-
-// /* Container for all cards */
-// .cardgrid {
-//   display: flex;
-//   justify-content: space-around;
-//   align-items: center;
-//     flex-direction: row;
-//     padding-top:3rem;
-//     padding-bottom: 3rem;
-//     width: 100vw;
-//     height: 100vh;
-//     background-color:black;
-//     text-align: center;
-//     color: black;
-// }
-
+// Container for the main content
+.smallscreen{
+  @media (min-width:767px) {
+    display:none;
+  }
 .mainpage {
-  // @media (max-width:1284px) {
-  //   width: fit-content;
-  //   height: fit-content;
-  // }
-  @media (max-width:500px) {
-      .cardgrid{
-        display: flex;
-        flex-direction: column;
-        padding: 1rem;
-        margin: 2rem;
-      }
-      .card{
-        width: 70rem;
-        padding: 1rem;
-       margin-bottom: 2rem;
-      }
-      .cardbutton{
-        font-size: 4rem;
-        width: 37rem;
-        height: 10rem;
-       
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-      }
-      .carddescription{
-        font-size: 60px;
-      }
-    .cardheading{
-     font-size: 7rem;
-    }
-    .lottiecontainer{
-      width: fit-content;
-      height: fit-content;
-    }
-  }
-  @media (max-width) {
-    
-    
-  }
-  display:flex;
-  gap:40px;
-  
-
- padding: 3rem;
-  
-  background-color:black;
+  overflow: hidden;
+  display: flex;
+  gap: 40px;
+  padding: 3rem;
+  background-color: black;
   text-align: center;
   color: rgb(231, 242, 252);
   justify-content: center;
   align-items: center;
-  font-family: "IBM Plex Sans Condensed",
-  sans-serif;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 2rem;
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 20px;
+    padding: 2rem;
+  }
+
+  @media (max-width: 500px) {
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
 }
-  .cardgrid{
-   
-  display:grid;
-  grid-template-columns: repeat(3,1fr);
-  gap:30px;
+
+// Card grid container
+.cardgrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  @media (max-width: 500px) {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+// Individual card styling
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr auto;
+  width: 14rem; /* Reduced width */
+  background: black;
+  border-radius: 20px;
+  border: 1px solid grey;
+  padding: 1.5rem;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+
+  @media (max-width: 768px) {
+    width: 12rem; /* Further reduce for tablets */
+    padding: 1rem;
+  }
+
+  @media (max-width: 500px) {
+    width: 90%; /* Use percentage for smaller screens to ensure it fits */
+    padding: 1rem;
+  }
+}
+
+// Card hover effect
+.cardgrid .card:hover {
+  transform: scale(1.05);
+  border: 1px solid white;
+
+  .cardheading {
+    color: red;
+  }
+
+  .cardbutton {
+    color: black;
+    background-color: white;
+    transition: 0.3s ease-in-out;
+  }
+
+  .carddescription {
+    color: white;
+    span {
+      color: red;
+    }
+  }
+}
+
+// Card heading
+.cardheading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 15px;
+  transition: color 0.5s ease-in-out;
+
+  @media (max-width: 500px) {
+    font-size: 1.4rem; /* Adjust for mobile */
+  }
+}
+
+// Card description
+.carddescription {
+  font-size: 14px;
+  color: grey;
+  margin-bottom: 20px;
+  font-weight: 500;
+  transition: color 0.5s ease-in-out;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 10px;
+  }
+}
+
+// Button styling
+.cardbutton {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  height: 2.5rem; /* Reduced height */
+  border: none;
+  border-radius: 5px;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem; /* Slightly reduced font size */
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+
+  @media (max-width: 768px) {
+    width: 65%;
+    height: 2rem;
+    font-size: 0.8rem;
+  }
+
+  @media (max-width: 500px) {
+    width: 70%;
+    height: 1.8rem;
+    font-size: 0.7rem;
+  }
+}
+
+// Button hover effect
+.cardbutton:hover {
+  color: red;
+  background-color: white;
+}
+
+// Lottie container styling
+.lottiecontainer {
+  margin: 20px 0;
+  height: 16rem; /* Adjust height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    height: 12rem;
+  }
+
+  @media (max-width: 500px) {
+    height: 10rem;
+  }
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // /* Container for all cards */
+// // .cardgrid {
+// //   display: flex;
+// //   justify-content: space-around;
+// //   align-items: center;
+// //     flex-direction: row;
+// //     padding-top:3rem;
+// //     padding-bottom: 3rem;
+// //     width: 100vw;
+// //     height: 100vh;
+// //     background-color:black;
+// //     text-align: center;
+// //     color: black;
+// // }
+
+.bigscreen {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.mainpage {
+  overflow: hidden;
+  min-width: 100%;
+  max-width: 100vw;
+  display: flex;
+  gap: 40px;
+  margin: 0; // Ensures no margin around mainpage
+  height: fit-content;
+  min-height: 100vh;
+  background-color: black;
+  text-align: center;
+  color: rgb(231, 242, 252);
+  justify-content: center;
+  align-items: center;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+.cardgrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin:0;
+  padding:0;
+  gap: 30px;
 }
 
 /* Styling for individual cards */
- .card {
- 
-  display:grid;
+.card {
+  display: grid;
   grid-template-columns: 3fr;
   grid-template-rows: auto auto 1fr auto auto;
-  width: 350px;
- 
-  
+  width: 100%;
+  max-width: 350px;
   background: black;
-  border-radius:50px;
-  border:1px solid grey;
+  border-radius: 50px;
+  border: 1px solid grey;
   padding: 20px;
   text-align: center;
   transition: 0.5s ease-in-out;
 }
 
 /* Hover effect for the card 3D transformation */
-.cardgrid .card:hover{
-  transform:scale(1.05);
-  border:1px solid white;
-  .cardheading{
+.cardgrid .card:hover {
+  transform: scale(1.05);
+  border: 1px solid white;
+
+  .cardheading {
     color: red;
-    // text-shadow: 0  0 15px rgba(0, 255, 145, 1);
-  }
-  .cardbutton{
-    color: black;
-    background-color:white;
-    transition:0.3s ease-in-out;
-  }
-  .cardbutton:hover{
-    color:red;
-  }
-  .carddescription {
-    color: white;
-    span{
-      color:red;
-    }
   }
 
+  .cardbutton {
+    color: black;
+    background-color: white;
+    transition: 0.3s ease-in-out;
+  }
+
+  .cardbutton:hover {
+    color: red;
+  }
+
+  .carddescription {
+    color: white;
+    span {
+      color: red;
+    }
+  }
 }
 
 /* Card heading styling */
 .cardheading {
   font-size: 2rem;
   font-weight: 600;
-  color:white;
+  color: white;
   margin-bottom: 15px;
   transition: color 0.5s ease-in-out;
 }
-
-/* Heading hover effect (glow) */
-
 
 /* Description styling */
 .carddescription {
@@ -145,26 +311,18 @@
   transition: color 0.5s ease-in-out, text-shadow 0.3s ease;
 }
 
-/* Description hover effect (glow) */
-// .cardgrid .carddescription:hover {
-//   color: white;
-//   text-shadow: 0 0 15px rgba(255, 69, 0, 1);
-// }
-
 /* Button styling */
-
 .cardbutton {
   display: block; /* Ensures the button behaves as a block element */
   margin: 0 auto; 
   width: 50%;
-  height:3rem;
+  height: 3rem;
   border: none;
   border-radius: 5px;
   border: 1px solid white;
   background-color: black;
   color: white;
-  font-family: "IBM Plex Sans Condensed",
-  sans-serif;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 1rem;
@@ -173,20 +331,21 @@
 }
 
 /* Button hover effect */
- .cardbutton:hover {
+.cardbutton:hover {
   color: red;
-  background-color:white;
+  background-color: white;
 }
 
 /* Lottie container to hold the animation */
- .lottiecontainer {
-  margin: 20px 0;
+.lottiecontainer {
+  margin: 20px 0; // Removed right margin
   transition: transform 0.3s ease;
   height: 20rem; /* Set a fixed height for uniformity */
   display: flex;
   justify-content: center; /* Ensures the Lottie animation is centered horizontally */
   align-items: center;
 }
+
 
 
 
