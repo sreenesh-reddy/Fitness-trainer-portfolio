@@ -57,7 +57,7 @@
                     .subhead {
                         font-size: 1.5rem; // Adjust for small screens
                         font-weight: 150;
-                        margin-bottom: 0;
+                        margin-bottom: 0.5rem;
                         color: grey;
     
                         @media (max-width: 767px) {
@@ -77,17 +77,18 @@
                 .contentimg {
                     min-height: 40%;
                     min-width: 40%;
+                    transform: scale(80%);
                 }
             }
     
             a {
                 
                 display:block;
-                width: 50%;
+                width: 100%;
                 text-decoration: none;
                 color: white;
                 transition: 0.3s ease-in-out;
-                margin-top: 100px;
+                margin-top: 10px;
                 margin-left:auto;
                 margin-right:auto;
                 font-size:0.7rem;

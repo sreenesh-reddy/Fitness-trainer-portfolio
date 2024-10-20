@@ -12,15 +12,15 @@ import { style } from 'framer-motion/client';
 const navItems = [
   {
     title: "Home",
-    href: "",
+    href: "#home",
   },
   {
-    title: "Transformations",
+    title: "Services",
+    href: "#Services",
+  },
+  {
+    title: "Clients",
     href: "#Transformations",
-  },
-  {
-    title: "Testimonals",
-    href: "",
   },
   {
     title: "About",

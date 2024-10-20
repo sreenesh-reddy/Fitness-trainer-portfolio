@@ -25,7 +25,7 @@ export default function Clients() {
             setip2(imgarray2[i]);
         }, 1500)
     }, [i])
-    return (<>
+    return (<div id="Transformations">
         <div className={styles.body}>
             <div className={styles.smallscreen}>
                 <div className={styles.mainpage}>
@@ -99,5 +99,5 @@ export default function Clients() {
                 </div>
             </div>
         </div>
-    </>)
+    </div>)
 }

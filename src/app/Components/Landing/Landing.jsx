@@ -26,10 +26,10 @@ export default function Landing() {
     const [click,setClick]=useState(false)
 
     return (
-        <div className={styles.mainpage}>
+        <div className={styles.mainpage} id="home">
             <div className={styles.hed}>
                 <h1>TRANSFORM YOUR <span>BODY</span> <br/> TRANSFORM YOUR <span>LIFE</span></h1>
-                <a href="#Contact">
+                <a href="#Services">
                     <div className={styles.button} onClick={(x)=> setClick(!x)} >
                         SERVICES
                     </div>

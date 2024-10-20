@@ -169,7 +169,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  transform: scale(80%);
   @media (max-width: 768px) {
     height: 12rem;
   }
@@ -259,6 +259,7 @@
   grid-template-rows: auto auto 1fr auto auto;
   width: 100%;
   max-width: 350px;
+  
   background: black;
   border-radius: 50px;
   border: 1px solid grey;
@@ -345,6 +346,7 @@
   display: flex;
   justify-content: center; /* Ensures the Lottie animation is centered horizontally */
   align-items: center;
+  
 }
 
 

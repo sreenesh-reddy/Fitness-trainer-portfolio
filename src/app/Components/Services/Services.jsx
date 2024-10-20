@@ -51,7 +51,7 @@ const Card3 = () => {
 };
 
 function Services  ()  {
-  return (<>
+  return (<div id="Services">
   <div className={styles.smallscreen}>
     <div className={styles.mainpage}>
       <div className={styles.cardgrid}>
@@ -72,7 +72,7 @@ function Services  ()  {
       </div>
       </div>
       </div>
-      </>);
+      </div>);
 };
 
 export default Services;
