@@ -3,6 +3,11 @@ body{
    height: 100vh;
     margin: 0;
     padding: 0;
-    
+    .navMobile{
+        z-index: 99;
+    }
+    .hed{
+        z-index:2;
+    }
 }
 
