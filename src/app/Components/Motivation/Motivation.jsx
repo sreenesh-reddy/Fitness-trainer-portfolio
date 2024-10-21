@@ -4,7 +4,7 @@ import pic from './pic.png'
 
 export default function Motivaiton() {
     return (
-        <><div id="Motivation" className={styles.pcbody}>
+        <div id="Motivation"><div className={styles.pcbody}>
             <div className={styles.mainpage}>
 
                 <div className={styles.bod}>
@@ -27,7 +27,7 @@ export default function Motivaiton() {
             </div>
         </div>
 
-            <div className={styles.mobbody}>
+            <div  className={styles.mobbody}>
                 <div className={styles.mainpage}>
                     {/* <div className={styles.heading}>
                         <h3>MOTIVATION</h3>
@@ -46,5 +46,5 @@ export default function Motivaiton() {
                     </a>
                 </div>
             </div>
-        </>)
+        </div>)
 }
