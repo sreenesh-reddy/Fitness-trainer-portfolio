@@ -4,7 +4,7 @@ import pic from './pic.png'
 
 export default function Motivaiton() {
     return (
-        <><div className={styles.pcbody}>
+        <><div id="Motivation" className={styles.pcbody}>
             <div className={styles.mainpage}>
 
                 <div className={styles.bod}>
