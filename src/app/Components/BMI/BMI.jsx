@@ -68,8 +68,8 @@ export default function BMI(){
   };
     
   return (<>
-    <div className={styles.smallscreen}>
-      <div className={styles.mainpage}>
+    <div className={styles.smallscreen} >
+      <div className={styles.mainpage} id='BMR Calculator'>
        {/* <h2 className={styles.header}>BMR Calculator</h2> */}
         {/* Changed to <h1> as per your request */}
         
@@ -158,7 +158,7 @@ export default function BMI(){
     </div>
     </div>
     <div className={styles.bigscreen}>
-    <div className={styles.mainpage}>
+    <div className={styles.mainpage}  id='BMR'>
        {/* <h2 className={styles.header}>BMR Calculator</h2> */}
         {/* Changed to <h1> as per your request */}
         

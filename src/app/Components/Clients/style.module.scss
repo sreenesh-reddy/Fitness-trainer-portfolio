@@ -16,7 +16,8 @@
             text-align: center;
             display: flex;
             overflow: hidden;
-            flex-direction: column;
+            flex-direction: row;
+           
             color: white;
             justify-content: center;
             justify-items: center;
@@ -28,6 +29,24 @@
   
             @media (max-width: 767px) {
                 font-size: 1.2rem; // Adjust main font size for small screens
+            }
+            
+            .beforebutton{
+                justify-content: center;
+                align-items: center;
+                width: 40px;
+                background-color: black;
+                border: 1px solid white;
+                border-radius: 50%;
+                color: white;
+                transform: scale(200%);
+                font-weight: bolder;
+            }
+            .beforebutton:hover{
+                color: black;
+                background-color: white;
+                cursor: pointer;
+                transform: scale(230%);
             }
     
             .content {
