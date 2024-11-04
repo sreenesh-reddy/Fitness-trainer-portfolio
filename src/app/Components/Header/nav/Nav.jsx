@@ -30,6 +30,10 @@ const navItems = [
     title: "Contact",
     href: "#Contact",
   },
+  {
+    title: "BMR Calculator",
+    href: " #BMR Calculator",
+  },
 ]
 
 export default function Nav({buttonState}) {

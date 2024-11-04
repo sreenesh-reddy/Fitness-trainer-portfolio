@@ -32,6 +32,7 @@ export default function Header() {
                 <a href="#Transformations" >Transformations</a>
                 <a href="#About">About</a>
                 <a href="#Contact">Contact</a>
+                <a href="#BMR">BMR</a>
             </div>
         </div></div>)
 }
