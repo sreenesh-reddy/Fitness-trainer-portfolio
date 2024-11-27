@@ -7,6 +7,7 @@ import { Link, Element, Events, animateScroll as scroll } from 'react-scroll';
 import Clients from "./Components/Clients/Clients"
 import Services from "./Components/Services/Services"
 import BMI from "./Components/BMI/BMI"
+import Certification from './Components/Certification/Certification'
 export default function Home() {
     return(
         <>
@@ -15,7 +16,9 @@ export default function Home() {
         <Services/>
         <BMI/>
         <Clients/> 
+         <Certification/>
          <Contact/>
+
         </>
         
     )
