@@ -1,55 +1,71 @@
 .certification {
     .desktopLayout {
-      display: grid;
-      grid-template-columns: repeat(2, 0fr);
-      gap: 20px;
-      height:100vh;
-      width:100vw;
-      justify-content: center;
+      display: flex;
+      justify-content:center;
       align-items: center;
-      gap: 20rem;
-      .images{
-        transform: scale(150%);
-      }
+      height:fit-content;
+      width: 100wh;
+     margin: 1rem;
+     .images{
+      position: relative;
+      width: 100%;
+     
+      aspect-ratio: 70/45;
+      margin: 2rem auto;
+      
     }
-  
-    .mobileLayout {
-      display: none;
-      text-align: center;
-      margin:0;
-      padding:0;
-      max-width: 100vw;
-      .images{
-        transform: scale(60%);
-      }
-  
-      .buttons {
-        margin-top: 10px;
-  
-        button {
-          margin: 0 5px;
-          padding: 10px 20px;
-          font-size: 16px;
-          cursor: pointer;
-          background-color: #0070f3;
-          color: white;
-          border: none;
-          border-radius: 5px;
-  
-          &:hover {
-            background-color: #005bb5;
-          }
-        }
-      }
     }
+      
+   
+ .mobileLayout {
+  display: none;
+  text-align: center;
+  margin:0;
+  padding:1rem;
+  max-width: 100vw; 
   
-    @media (max-width: 768px) {
-      .desktopLayout {
-        display: none;
-      }
-      .mobileLayout {
-        display: block;
-      }
-    }
+  .images{
+    position: relative;
+    width: 100%;
+   
+    aspect-ratio: 70/45;
+    margin: 2rem auto;
+    
   }
+  .buttons {
+    display: flex;
+    justify-content:space-around;
+    position: realtive;
+    gap:10rem;
+   
+    button {
+      margin: 0 5px;
+      padding: 10px 15px;
+      font-size: 20px;
+      cursor: pointer;
+      background-color:black;
+      color: white;
+      border: white 1px solid;
+      border-radius: 23px;
+
+      &:hover {
+        background-color:white;
+        color: black;
+        border:black 1px solid;
+      }
+    }
+  }  
+}
+@media (max-width: 768px) {
+  .desktopLayout {
+    display: none;
+  }
+  .mobileLayout {
+    display:block;
+  }
+
+}
+
+}
+  
   

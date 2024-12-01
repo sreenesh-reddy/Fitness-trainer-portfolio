@@ -24,20 +24,23 @@ const Certification = () => {
   return (
     <div className={styles.certification}>
       <div className={styles.desktopLayout}>
+        
         <div className={styles.images}>
-          <Image  src={c1} alt="" width={500} height={300} />
+          <Image  src={c2} alt=""  fill />
         </div>
         <div className={styles.images}>
-          <Image  src={c2} alt="" width={500} height={300} />
+          <Image  src={c1} alt=""  fill />
         </div>
+       
+        
       </div>
       <div className={styles.mobileLayout}>
         <div className={styles.images}>
-        <Image src={certificates[currentImage].src} alt={certificates[currentImage].alt} width={500} height={300} />
+        <Image src={certificates[currentImage].src} alt={certificates[currentImage].alt}  fill />
         </div>
         <div className={styles.buttons}>
-          <button onClick={handlePrev}>Previous</button>
-          <button onClick={handleNext}>Next</button>
+          <button onClick={handlePrev}>{'<'}</button>
+          <button onClick={handleNext}>{'>'}</button>
         </div>
       </div>
     </div>
